@@ -1,91 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>My Hobby Page</title>
-  <link rel="stylesheet" href="custom.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scratch Page - Guitar Passion</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+    .section-title {
+      margin-top: 40px;
+      margin-bottom: 20px;
+    }
+    .video-title {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+  </style>
 </head>
 <body>
 
-  <div id="top" class="header-section">
+  <!-- Header -->
+  <header class="bg-primary text-white text-center py-5">
     <h1>🎸 My Passion: Playing Guitar</h1>
-    <p><a href="#videos">Jump to Videos</a></p>
-  </div>
+    <a href="#my-guitar-video" class="text-white text-decoration-underline">Jump to My Guitar Video</a>
+  </header>
 
-  <div class="content-section">
-    <h2>🎵 Favorite Styles</h2>
-    <ol>
-      <li>Rock
-        <ul>
-          <li>Classic Rock</li>
-          <li>Alternative</li>
-        </ul>
-      </li>
-      <li>Jazz</li>
-      <li>Fingerstyle</li>
-    </ol>
+  <main class="container my-5">
 
-    <img src="images/Homer_simpson.png" alt="Me playing guitar" width="300">
-  </div>
-
-  <div id="videos" class="video-section">
-    <h2>🎥 Inspiring Video</h2>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-      title="YouTube video" frameborder="0" allowfullscreen></iframe>
-  </div>
-
-  <div class="tableau-section">
-  <h2>📊 Spotify Top Artists and Songs</h2>
-
-  <div class='tableauPlaceholder' id='viz1750188397147' style='position: relative'>
-    <noscript>
-      <a href='#'>
-        <img alt='Main ' src='https://public.tableau.com/static/images/To/TopSpotifyArtistsandSongs0310/Main/1_rss.png' style='border: none' />
-      </a>
-    </noscript>
-    <object class='tableauViz' style='display:none;'>
-      <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-      <param name='embed_code_version' value='3' />
-      <param name='site_root' value='' />
-      <param name='name' value='TopSpotifyArtistsandSongs0310/Main' />
-      <param name='tabs' value='no' />
-      <param name='toolbar' value='yes' />
-      <param name='static_image' value='https://public.tableau.com/static/images/To/TopSpotifyArtistsandSongs0310/Main/1.png' />
-      <param name='animate_transition' value='yes' />
-      <param name='display_static_image' value='yes' />
-      <param name='display_spinner' value='yes' />
-      <param name='display_overlay' value='yes' />
-      <param name='display_count' value='yes' />
-      <param name='language' value='en-US' />
-    </object>
-  </div>
-
-  <script type='text/javascript'>
-    var divElement = document.getElementById('viz1750188397147');
-    var vizElement = divElement.getElementsByTagName('object')[0];
-    if (divElement.offsetWidth > 800) {
-      vizElement.style.width = '1200px';
-      vizElement.style.height = '827px';
-    } else if (divElement.offsetWidth > 500) {
-      vizElement.style.width = '1200px';
-      vizElement.style.height = '827px';
-    } else {
-      vizElement.style.width = '100%';
-      vizElement.style.height = '1177px';
-    }
-    var scriptElement = document.createElement('script');
-    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-    vizElement.parentNode.insertBefore(scriptElement, vizElement);
-  </script>
-</div>
+    <!-- Favorite Styles -->
+    <section class="mb-5">
+      <h2 class="text-dark section-title">🎶 Favorite Styles</h2>
+      <ol>
+        <li>Blues</li>
+        <li>Funk</li>
+        <li>Jazz</li>
+      </ol>
+    </section>
 
 
-  <footer class="footer-section">
-    <p><a href="#top">Back to Top</a></p>
-    <p><a href="index.html">Back to Main Page</a></p>
-    <p><a href="webapp.html">Try my AI Web App</a></p>
+    <!-- My Guitar + Inspiring Video side by side -->
+    <section id="my-guitar-video" class="mb-5">
+      <div class="row g-4">
+        <!-- My Guitar Video -->
+        <div class="col-md-6">
+          <h4 class="video-title text-dark">🎸 My Guitar Performance</h4>
+          <div class="ratio ratio-16x9">
+            <iframe src="https://www.youtube.com/embed/Bi3ZbG9bdIE" title="My Guitar Video" allowfullscreen></iframe>
+          </div>
+        </div>
+        <!-- Inspiring Video -->
+        <div class="col-md-6">
+          <h4 class="video-title text-muted">🎬 Other Inspiring Video</h4>
+          <div class="ratio ratio-16x9">
+            <iframe src="https://www.youtube.com/embed/32GZ3suxRn4" title="Other Inspiring Video" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tableau -->
+    <section class="mb-5">
+      <h2 class="text-dark section-title">📊 Spotify Top Artists and Songs</h2>
+      <div class="tableauPlaceholder" id="viz123" style="position: relative;">
+        <noscript><a href="#"><img alt="Tableau Graph" src="https://public.tableau.com/static/images/To/TopSpotifyArtistsandSongs0310/Main/1.png" /></a></noscript>
+        <object class="tableauViz" style="display:none;">
+          <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F"/>
+          <param name="embed_code_version" value="3"/>
+          <param name="name" value="TopSpotifyArtistsandSongs0310/Main"/>
+          <param name="tabs" value="no"/>
+          <param name="toolbar" value="yes"/>
+        </object>
+      </div>
+      <script type="text/javascript">
+        const divElement = document.getElementById('viz123');
+        const vizElement = divElement.getElementsByTagName('object')[0];
+        vizElement.style.width = "100%";
+        vizElement.style.height = "600px";
+        const scriptElement = document.createElement('script');
+        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+      </script>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p><a class="text-white" href="index.html">← Back to Main Page</a> | 
+       <a class="text-white" href="webapp.html">Try My AI Web App</a></p>
   </footer>
 
 </body>
 </html>
-
