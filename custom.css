@@ -1,0 +1,35 @@
+body {
+  background-color: #fef6e4;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.header-section {
+  text-align: center;
+  background-color: #ffcb77;
+  padding: 20px;
+}
+
+.content-section {
+  margin: 40px;
+  background-color: #e0f7fa;
+  padding: 20px;
+}
+
+.video-section {
+  background-color: #fde2e4;
+  padding: 20px;
+}
+
+.footer-section {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.tableau-section {
+  margin: 60px auto;
+  padding: 30px;
+  background-color: #fffbe6;
+  border: 1px solid #ddd;
+  text-align: center;
+}
